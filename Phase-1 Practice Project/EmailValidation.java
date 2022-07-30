@@ -34,7 +34,7 @@ public class EmailValidation {
 		email[9]="kumarg)obi@gmail.com";//invalid email ids
 		
 		e.display(email);
-		System.out.println("Hai");
+		
 		
 	}
 
