@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Budget Planner</title>
+    <script src="config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body onload="CreateTableFromJSON()" class="bg-secondary">
+    <div class="container" style="background-size: cover;">
+    <table border="1" class="table table-dark table-striped">
+        <thead>
+            <tr scope="row">
+                <th scope="col">Project Id</th>
+                <th scope="col">Name of Client</th>
+                <th scope="col">Name of Project</th>
+                <th sorted="col">Name of Project Manager</th>
+                <th scope="col">Estimated cost</th>
+                <th scope="col">Remove the project</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+
+        </tbody>
+    </table >
+    <form>
+    <div style="text-align: center;">
+    <div align="center"></div>
+    <ul class="list-group"></ul>
+    <li class="list-group-item list-group-item-action active" aria-current="true">
+    <H3>To update the new deal</H3>
+</li>
+    <li  class="list-group-item"><label>Client Name : </label>
+        <input type="text" id="clientNameInput" />
+    </li>
+    <li class="list-group-item"> <label>Project Name : </label>
+        <input type="text" id="projectNameInput" />
+    </li>
+    <li class="list-group-item"> <label>Project Manager : </label>
+        <input type="text" id="projectManagerInput" />
+    </li>
+    <li class="list-group-item"><label>Project Cost : </label> 
+        <input type="number" id="projectCostInput" />
+    </li>
+    <li class="list-group-item">
+    <input type="button" onclick="AddNewDeal()" value="Save" />
+</li>
+</ul>
+    </div>
+</form>
+</div>
+</div>
+
+</body>
+
+</html> 
