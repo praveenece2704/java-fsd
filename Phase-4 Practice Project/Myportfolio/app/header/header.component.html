@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <a href="https://www.simplilearn.com" class="navbar-brand">MyPortfolio</a>
+        </div>
+
+        <ul class="navbar-nav ">
+            <li><a *ngIf="hardcodedAuthenticationService.isLoggedIn()" routerLink="/main-page/praveen" class="nav-link">Home</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isLoggedIn()" routerLink="/skills" class="nav-link">Skills</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isLoggedIn()" routerLink="/personal" class="nav-link">Personal Details</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isLoggedIn()" routerLink="/projects" class="nav-link">Projects</a></li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a *ngIf="!hardcodedAuthenticationService.isLoggedIn()" routerLink="/sign-in" class="nav-link">Signin</a></li>
+            <li><a *ngIf="!hardcodedAuthenticationService.isLoggedIn()" class="nav-link">Signup</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+</header>

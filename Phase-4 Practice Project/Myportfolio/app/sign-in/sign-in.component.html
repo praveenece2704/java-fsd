@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row justify-content-center" style="margin:100px">
+    <div class="card" style="max-width:300px;height:300px">
+        <h5 class="card-header">Signin Page</h5>
+        <div class="card-body">
+            <h5 class="card-title">Signin</h5>
+            <form>
+                Enter the username : <input type="text" name="name" [(ngModel)]="username"><br>
+                Enter the password : <input type="password" name="password" [(ngModel)]="password"><br>
+            </form>
+            <br><button (click)=checkcondition() class="btn btn-success">Login</button> 
+            <div class="alert alert-warning" *ngIf='invalidLogin'> {{errorMessage}} </div>
+        </div>
+    </div>
+</div>
+
+</div>
