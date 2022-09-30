@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "praveen",
+      "lastName": "kumar",
+      "email": "praveen@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Ravi",
+      "lastName": "Ram",
+      "email": "ram@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Janaki",
+      "lastName": "Ram",
+      "email": "janaki@gmail.com"
+    },
+    {
+      "id": 5,
+      "firstName": "Inisha",
+      "lastName": "Venkat",
+      "email": "inivam@gmail.com"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "Praveen kumar",
+      "email": "praveen@gmail.com",
+      "password": "12345",
+      "mobile": "6383632951",
+      "id": 1
+    },
+    {
+      "fullName": "Raj King",
+      "email": "king@gmail.com",
+      "password": "12345",
+      "mobile": "6383633453",
+      "id": 2
+    },
+    {
+      "fullName": "Ravi Ram",
+      "email": "ram@gmail.com",
+      "password": "12345",
+      "mobile": "8798774432",
+      "id": 3
+    },
+    {
+      "fullName": "Murali Kumar",
+      "email": "murali@gmail.com",
+      "password": "12345",
+      "mobile": "6734653543",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
