@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="com-md-6">
+            <div class="card m-3 mb-2 bg-info">
+                <div class="text-center">
+                    <h1>Sign up</h1>
+                    <h3>Register here</h3>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">FirstName</label>
+                        <input type="text" formControlName="fullName" class="form-control" id="exampleInputPassword1">
+                      </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                            <input type="text" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+                          </div>
+
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                     
+                </form>
+                <a style="color:black" routerLink="/login">Already signup,click here to Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

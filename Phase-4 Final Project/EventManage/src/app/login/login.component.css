@@ -1,0 +1,9 @@
+.card
+{
+    padding:40px;
+    width:500px;
+    position:absolute;
+    margin-bottom: 0;
+    top:15%;
+    left:30%;
+}
