@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+    <h1 align="center">Student registration</h1>
+    <table align="center">
+        <tr>
+            <td>Student id</td>
+            <td><input type="text" name="id"/></td>
+        </tr>
+        <tr>
+            <td>Student Name</td>
+            <td><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Enter the password" name="pass"/></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio"  name="gender" id="male" value="male" />Male 
+                <input type="radio"  name="gender" id="female" value="female"/>Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td>
+                <input type="checkbox"  name="hobby" value="cricket"/>Cricket
+                <input type="checkbox"  name="hobby" value="football"/>Football
+            </td>
+        </tr>
+        <tr>
+            <td>Date of birth</td>
+            <td><input type="date" name="dob"/></td>
+        </tr>
+        <tr>
+            <td>Subjects</td>
+            <td>
+                <select size="0" name="sub">
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                <textarea rows="3" cols="20" name="tarea">
+                    Enter the address
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" onclick="fun1()"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script src="config.js">
+
+</script>
+</html>
