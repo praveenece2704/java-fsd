@@ -87,51 +87,51 @@ public class NewTest {
 		 
 	}
 	
-//	@Test
-//	public void Test4()
-//	{
-//		System.setProperty("webdriver.chrome.driver",
-//				"C:\\Users\\Raj\\Desktop\\Phase 5 Documents\\95\\chromedriver.exe");
-//		wd = new ChromeDriver();
-//		// maximize the screen
-//		wd.manage().window().maximize();
-//		wd.get("http://localhost:4200/adminlogin");
-//		 
-//		 wd.findElement(By.xpath("/html/body/app-root/app-adminlogin/div/a")).click();
-//		 
-//		 wd.findElement(By.xpath("/html/body/app-root/app-verify/table/tbody/tr/td[11]/button[1]")).click();
-//		 
-//	}
-//	
-//	@Test
-//	public void done()
-//	{
-//		System.setProperty("webdriver.chrome.driver",
-//				"C:\\Users\\Raj\\Desktop\\Phase 5 Documents\\95\\chromedriver.exe");
-//		wd = new ChromeDriver();
-//		// maximize the screen
-//		wd.manage().window().maximize();
-//		//main page testing
-//		wd.get("http://localhost:4200/main");
-//		 
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[1]/input")).sendKeys("praveen@gmail.com");
-//		 
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[2]/input")).click();
-//		 //apply for new aadhar
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[1]/button[1]")).click();
-//		 
-//		 wd.navigate().to("http://localhost:4200/main");
-//		 //To update the aadhar details
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[2]/button[1]")).click();
-//		 
-//		 wd.navigate().to("http://localhost:4200/main");
-//		 //cancel aadhar for death person
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[3]/button[1]")).click();
-//		 
-//		 wd.navigate().to("http://localhost:4200/main");
-//		 //apply for duplicate aadhar
-//		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[4]/button[1]")).click();
-//		 
-//	}
+	@Test
+	public void Test4()
+	{
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Raj\\Desktop\\Phase 5 Documents\\95\\chromedriver.exe");
+		wd = new ChromeDriver();
+		// maximize the screen
+		wd.manage().window().maximize();
+		wd.get("http://localhost:4200/adminlogin");
+		 
+		 wd.findElement(By.xpath("/html/body/app-root/app-adminlogin/div/a")).click();
+		 
+		 wd.findElement(By.xpath("/html/body/app-root/app-verify/table/tbody/tr/td[11]/button[1]")).click();
+		 
+	}
+	
+	@Test
+	public void done()
+	{
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Raj\\Desktop\\Phase 5 Documents\\95\\chromedriver.exe");
+		wd = new ChromeDriver();
+		// maximize the screen
+		wd.manage().window().maximize();
+		//main page testing
+		wd.get("http://localhost:4200/main");
+		 
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[1]/input")).sendKeys("praveen@gmail.com");
+		 
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[2]/input")).click();
+		 //apply for new aadhar
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[1]/button[1]")).click();
+		 
+		 wd.navigate().to("http://localhost:4200/main");
+		 //To update the aadhar details
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[2]/button[1]")).click();
+		 
+		 wd.navigate().to("http://localhost:4200/main");
+		 //cancel aadhar for death person
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[3]/button[1]")).click();
+		 
+		 wd.navigate().to("http://localhost:4200/main");
+		 //apply for duplicate aadhar
+		 wd.findElement(By.xpath("/html/body/app-root/app-main/div[3]/div/div[4]/button[1]")).click();
+		 
+	}
 
 }
