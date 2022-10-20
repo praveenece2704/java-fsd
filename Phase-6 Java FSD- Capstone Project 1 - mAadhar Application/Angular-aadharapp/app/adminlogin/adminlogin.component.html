@@ -1,0 +1,44 @@
+<table class="table table-striped">
+    <thead>
+
+    </thead>
+    <tr>
+        <th>Email</th>
+         <th>FirstName</th>
+         <th>LastName</th>
+         <th>Address</th>
+         <th>Dob</th>
+         <th>age</th>
+         <th>panNo</th>
+         <th>citizenId</th>
+         <th>passportId</th>
+         <th>IssueDate</th>
+         <th>CurrentStatus</th>
+         <th>ApplicationId</th>
+         <th>DateofApplication</th>
+         <th>Gender</th>
+         <th>AadharNo</th>
+    </tr>
+    <tbody>
+    <tr *ngFor="let detail of details">
+        <td>{{detail.email}}</td>
+        <td>{{detail.firstName}}</td>
+        <td>{{detail.lastName}}</td>
+        <td>{{detail.address}}</td>
+        <td>{{detail.dob}}</td>
+        <td>{{detail.age}}</td>
+        <td>{{detail.panNo}}</td>
+        <td>{{detail.citizenId}}</td>
+        <td>{{detail.passportId}}</td>
+        <td>{{detail.issueDate}}</td>
+        <td>{{detail.currentStatus}}</td>
+         <td>{{detail.applicationId}}</td>
+          <td>{{detail.dateofApplication}}</td>
+          <td>{{detail.gender}}</td>
+          <td>{{detail.aadharNo}}</td>
+    </tr>
+</tbody>
+</table>
+
+<div class="text-center" >
+<a class="btn btn-danger" routerLink="/verify" style="font-size: 25px;">To Verify the user details</a></div>

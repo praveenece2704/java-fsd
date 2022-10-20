@@ -1,0 +1,16 @@
+<form>
+    <h1>{{message}}</h1>
+<div class="row"><div class="col"> 
+    <label>Enter the Aadhar Number</label><br>
+    <input type="text" [(ngModel)]="details.aadharNo" name="aadharNo" placeholder="Aadhar Number"><br>
+        <label>Enter the FullName</label> <br><input type="text" [(ngModel)]="details.fullName" name="fullName" placeholder="fullName"><br>
+        <label>Enter the Date of Death</label><br> <input type="text" [(ngModel)]="details.dateOfDeath" name="dateOfDeath" placeholder="dateOfDeath"><br>
+    </div>
+</div>
+<br>
+<div>
+    <input class="btn btn-success mx-3" type="submit" name="submit_reg" value="ApplyRequest" (click)="cancelNow()"><br>
+    </div>
+    <br><br>
+    <a class="alert alert-warning" *ngIf="message =='Aadhar cancellation Request is Submitted'" routerLink="/logout">Applied Successfully.. Click here to Logout</a>
+</form>

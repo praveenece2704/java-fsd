@@ -1,0 +1,34 @@
+<h1>Verify the details and Apply for Duplicate</h1>
+<table class="table table-striped bg-warning">
+    <thead>
+    </thead>
+    <tr>
+        <th>Email</th>
+         <th>passportId</th>
+         <th>IssueDate</th>
+         <th>CurrentStatus</th>
+         <th>ApplicationId</th>
+         <th>DateofApplication</th>
+         <th>Gender</th>
+         <th>AadharNo</th>
+    </tr>
+    <tbody>
+    <tr *ngFor="let detail of details">
+        <td>{{detail.email}}</td>    
+        <td>{{detail.passportId}}</td>
+        <td>{{detail.issueDate}}</td>
+        <td>{{detail.currentStatus}}</td>
+         <td>{{detail.applicationId}}</td>
+          <td>{{detail.dateofApplication}}</td>
+          <td>{{detail.gender}}</td>
+          <td>{{detail.aadharNo}}</td>
+    </tr>
+</tbody>
+</table>
+<form>
+    <input type="text" placeholder="email"><br><br>
+    <div>
+        <input routerLink="/logout" class="btn btn-success mx-3" type="submit" name="submit_reg" value="click here to Apply" ><br>
+        </div>
+    </form>
+    

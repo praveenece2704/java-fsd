@@ -1,0 +1,15 @@
+<form>
+    <h1>{{message}}</h1>
+    <h1 style="font-family:'Times New Roman', Times, serif">Login</h1><br>
+    <label>Enter the Mobile Number</label><br>
+    <input type="text" [(ngModel)]="user.mobile" name="mobile" placeholder="mobile"><br>
+    <label>Enter the Mobile Email</label><br> <input type="text" [(ngModel)]="user.email" name="email" placeholder="email"><br>
+    <label>Enter the Mobile Password</label><br><input type="password" [(ngModel)]="user.password" name="password" placeholder="password"><br>
+    <br><br>
+    <div>
+        <input class="btn btn-dark" type="submit" name="submit_reg" value="Login" (click)="loginNow()">
+    </div>
+<br>
+<br>
+    <a class="alert alert-warning" *ngIf="message =='Login Successfull'" routerLink="/main">Login Successfull.. Click here</a>
+    </form>

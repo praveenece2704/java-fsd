@@ -1,0 +1,18 @@
+<form>
+    <h1>{{message}}</h1>
+
+<label>Enter the Mobile Number</label><br>   <input type="text" [(ngModel)]="register.mobile" name="mobile" placeholder="mobile"><br>
+<label>Enter the  Email</label><br>  <input type="text" [(ngModel)]="register.email" name="email" placeholder="email"><br>
+<label>Enter the  Password</label><br>  <input type="password" [(ngModel)]="register.password" name="password" placeholder="password"><br>
+<label>Enter the Name</label><br>   <input type="text" [(ngModel)]="register.name" name="name" placeholder="name"><br>
+<label>Enter the Dob</label><br>   <input type="text" [(ngModel)]="register.dob" name="dob" placeholder="dob"><br>
+<label>Enter the PassportId</label><br>   <input type="text" [(ngModel)]="register.passportId" name="passportId" placeholder="passportId"><br>
+<label>Enter the Address</label><br>   <input type="text" [(ngModel)]="register.address" name="address" placeholder="address"><br>
+<br>
+    <div>
+        <input class="btn btn-success mx-3" type="submit" name="submit_reg" value="Register" (click)="registerNow()"><br><br>
+        <button routerLink="/login" class="btn btn-info mx-3">Login</button>
+    </div>
+    </form>
+
+    

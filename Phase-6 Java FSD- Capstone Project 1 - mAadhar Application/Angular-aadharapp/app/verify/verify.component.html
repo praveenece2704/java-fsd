@@ -1,0 +1,34 @@
+<table  class="table table-striped table-dark">
+    <thead>
+
+    <tr>
+        <th>Email</th>
+         <th>FirstName</th>
+         <th>citizenId</th>
+         <th>passportId</th>
+         <th>IssueDate</th>
+         <th>CurrentStatus</th>
+         <th>ApplicationId</th>
+         <th>DateofApplication</th>
+         <th>Gender</th>
+         <th>AadharNo</th>
+         <th>Action</th>
+        </tr>
+    </thead>
+ 
+    <tbody>
+    <tr *ngFor="let detail of details">
+        <td>{{detail.email}}</td>
+        <td>{{detail.firstName}}</td>
+        <td>{{detail.citizenId}}</td>
+        <td>{{detail.passportId}}</td>
+        <td>{{detail.issueDate}}</td>
+        <td>{{detail.currentStatus}}</td>
+         <td>{{detail.applicationId}}</td>
+          <td>{{detail.dateofApplication}}</td>
+          <td>{{detail.gender}}</td>
+          <td>{{detail.aadharNo}}</td>
+          <td><button routerLink="/adminupdate">Approve</button><button class="m-1">Not Approve</button></td>
+    </tr>
+</tbody>
+</table>

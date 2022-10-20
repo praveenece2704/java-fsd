@@ -1,0 +1,30 @@
+<form>
+    {{message}}
+<div class="row">
+    <h1 style="font-family:'Times New Roman', Times, serif">Fill the Application form</h1>
+    <div class="col"> 
+        <label>Enter the Email</label><br>
+        <input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.email" name="email" placeholder="email"><br>
+        <label>Enter the FirstName</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.firstName" name="firstName" placeholder="firstName"><br>
+        <label>Enter the LastName</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.lastName" name="lastName" placeholder="lastName"><br>
+        <label>Enter the Address</label> <br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.address" name="address" placeholder="address"><br>
+        <label>Enter the Gender</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.gender" name="gender" placeholder="gender"><br>
+    </div>
+    <div class="col"><label>Enter the DOB</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.dob" name="dob" placeholder="DOB"><br>
+        <label>Enter the Age</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.age" name="age" placeholder="age"><br>
+        <label>Enter the PanNo</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.panNo" name="panNo" placeholder="panNo"><br>
+        <label>Enter the Passport</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.passportId" name="passportId" placeholder="passportId"><br>
+        <label>Enter the DateofApplication</label><br><input style="font-size:20px;width:50%" type="text" [(ngModel)]="details.dateofApplication" name="dateofApplication" placeholder="dateofApplication"><br>
+    </div>
+</div>
+<div>
+    <br>
+    <input class="btn btn-success mx-3" type="submit" name="submit_reg" value="Register" (click)="applyNow()"><br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <a class="alert alert-warning" *ngIf="message =='Applied Successfully'" routerLink="/logout">Applied Successfully.. Click here to Logout</a>
+</form>
+
+

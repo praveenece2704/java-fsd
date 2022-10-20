@@ -1,0 +1,14 @@
+<form>
+    <h1>{{message}}</h1>
+    <br>
+    <label>Enter the Username or Email Id</label><br>
+    <input style="font-size:30px;width:25%" type="text" [(ngModel)]="admin.username" name="username" placeholder="username"><br>
+    <label>Enter the password </label><br>
+    <input style="font-size:30px;width:25%" type="password" [(ngModel)]="admin.password" name="password" placeholder="password"><br>
+    <br><br>
+    <div>
+        <input style="font-size: 30px;" class="btn btn-success" type="submit" name="submit_reg" value="Login" (click)="aloginNow()">
+    </div>
+<br><br><br>
+    <a class="alert alert-warning" *ngIf="message =='Login Successful'" routerLink="/adminlogin">Login Successfull.. Click here</a>
+    </form>

@@ -1,0 +1,31 @@
+<form>
+    {{message}}
+<div class="row">
+    <h1 style="font-family:'Times New Roman', Times, serif">Fill the details to be updated in the Aadhar</h1>
+    <div class="col"><label>Enter the Email</label><br> <input type="text" [(ngModel)]="details.email" name="email" placeholder="email"><br>
+        <label>Enter the FirstName</label><br>  <input type="text" [(ngModel)]="details.firstName" name="firstName" placeholder="firstName"><br>
+        <label>Enter the LastName</label><br> <input type="text" [(ngModel)]="details.lastName" name="lastName" placeholder="lastName"><br>
+        <label>Enter the Address</label><br> <input type="text" [(ngModel)]="details.address" name="address" placeholder="address"><br>
+        <label>Enter the Gender</label><br> <input type="text" [(ngModel)]="details.gender" name="gender" placeholder="gender"><br>
+        <label>Enter the CitizenId</label><br> <input type="text" [(ngModel)]="details.citizenId" name="citizenId" placeholder="citizenId"><br>
+    </div>
+    <div class="col">
+    <label>Enter the DOB</label><br> <div class="col"><input type="text" [(ngModel)]="details.dob" name="dob" placeholder="DOB"><br>
+        <label>Enter the Age</label><br> <input type="text" [(ngModel)]="details.age" name="age" placeholder="age"><br>
+        <label>Enter the PanNo</label><br> <input type="text" [(ngModel)]="details.panNo" name="panNo" placeholder="panNo"><br>
+        <label>Enter the Passport Id</label><br> <input type="text" [(ngModel)]="details.passportId" name="passportId" placeholder="passportId"><br>
+        <label>Enter the Date Of Application</label><br> <input type="text" [(ngModel)]="details.dateofApplication" name="dateofApplication" placeholder="dateofApplication"><br>
+        <label>Enter the Application Id</label><br> <input type="text" [(ngModel)]="details.applicationId" name="applicationId" placeholder="applicationId"><br>
+</div></div>
+</div>
+
+<div>
+    <br>
+    <input class="btn btn-success mx-3" type="submit" name="submit_reg" value="Update the Details" (click)="updateNow()"><br>
+    </div>
+    <br>
+    <br>
+    <a class="alert alert-warning" *ngIf="message =='Updated Successfully'" routerLink="/logout">Applied Successfully.. Click here to Logout</a>
+</form>
+
+
