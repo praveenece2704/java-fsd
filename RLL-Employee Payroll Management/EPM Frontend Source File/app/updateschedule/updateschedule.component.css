@@ -1,0 +1,9 @@
+.container {
+    background-image: url('https://images.ctfassets.net/co0pvta7hzrh/11a9IRE6LLsaIdfCGdPAUL/e5c15bdd7700c3823d0672a096d75cce/professional_services_quote_form_template_Thumbnail.png');
+    background-size: cover;
+    margin-top: 30px;
+    max-width: 600px;
+  }
+ label{
+    color:white
+ }

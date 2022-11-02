@@ -1,0 +1,9 @@
+.container {
+    background-image: url('https://slideplayer.com/79/13217824/big_thumb.jpg');
+    background-size: cover;
+    margin-top: 30px;
+    max-width: 600px;
+  }
+label{
+    color:white
+}
