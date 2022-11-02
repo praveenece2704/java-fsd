@@ -1,0 +1,19 @@
+.container {
+    background-color: rgb(54, 131, 233);
+    margin-top: 30px;
+    max-width: 400px;
+  }
+  label
+  {
+     color:white;
+  }
+input 
+{
+    border-radius: 20px;
+    width:90%;
+    margin-left: 20px;
+}
+img{
+    width:20%;
+    height:20%;
+}

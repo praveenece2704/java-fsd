@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand bg-info navbar-dark navbar-fixed-top">
+    <ul class = "navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class = "nav-item">
+        <a href="createattendance" routerLinkActive="active" class="nav-link btn btn-dark" ><span style="color:white">CreateAttendance</span></a>
+    </li>
+    </ul> 
+    <div style="margin-right:35%;" >
+        <span style="font-size: 25px;" class="navbar-brand mx-auto">Employee Attendance List</span>
+    </div>
+    <ul class="nav navbar-nav my-2 my-lg-0">
+
+    </ul><button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+</nav>
+
+
+<table class ="table table-striped table-bordered table-dark">
+    <thead>
+        <tr class="text-center">
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr *ngFor = "let employ of attend">
+        <td> {{employ.empId}}</td>
+        <td> {{employ.date}}</td>
+        <td> {{employ.status}}</td>
+        <td>
+            <button (click) = "deleteEmployee(employ.empId)" class = "btn btn-danger">Delete</button>
+        </td>
+        </tr>
+    </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;<br>
+<div class="text-center">
+<a href="loginsuccess" class="btn btn-warning" style="font-size:20px">Back</a>
+</div>

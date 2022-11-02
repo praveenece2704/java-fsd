@@ -1,0 +1,24 @@
+.container {
+  background-image: linear-gradient(#110755, #dd2d6e,#ff8a00 );
+  margin-top: 30px;
+  max-width: 600px;
+  text-decoration: bold;
+  box-shadow: 10px 10px 5px rgb(209, 151, 179);
+  border-radius: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color:aliceblue
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
