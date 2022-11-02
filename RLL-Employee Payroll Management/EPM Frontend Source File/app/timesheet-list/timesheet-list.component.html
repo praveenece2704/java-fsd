@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand bg-info navbar-dark navbar-fixed-top">
+  <ul class = "navbar-nav mr-auto mt-2 mt-lg-0">
+  <li class = "nav-item">
+        <a href="createtimesheet" routerLinkActive="active" class="nav-link btn btn-dark" ><span style="color:white;font-size:20px">CreateTimesheet</span></a>
+    </li>
+    
+  </ul> 
+  <div style="margin-right:40%;" >
+      <span style="font-size: 25px;" class="navbar-brand mx-auto">Timesheet List</span>
+  </div>
+  <ul class="nav navbar-nav my-2 my-lg-0">
+
+  </ul><button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+</nav>
+
+<table class="table table-striped table-bordered">
+  <thead class="text-center" style="background-color:black;color:white">
+    <tr>
+      <th>EmpId</th>
+      <th>Date</th>
+      <th>InTime</th>
+      <th>OutTime</th>
+      <th>RegularTime</th>
+      <th>BreakTime</th>
+      <th>OverTimeHours</th>
+      <th>TotalHours</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody style="color:white;background-image:url('https://t4.ftcdn.net/jpg/03/98/39/69/360_F_398396995_FF2Y8YttChqcbYEv9SFydHA2w7OphMfm.jpg')">
+    <tr *ngFor= "let timesheet of timesheets" class="text-center" >
+        <td style="color:white;">{{timesheet.empId}}</td>
+        <td style="color:white;">{{timesheet.date}}</td>
+        <td style="color:white;">{{timesheet.inTime}}</td>
+        <td style="color:white;">{{timesheet.outTime}}</td>
+        <td style="color:white;">{{timesheet.regularTime}}</td>
+        <td style="color:white;">{{timesheet.breakTime}}</td>
+        <td style="color:white;">{{timesheet.overtimeHours}}</td>
+        <td style="color:white;">{{timesheet.totalHours}}</td>
+        <td>
+            <button (click) = "updateTimesheet(timesheet.empId)" class="btn btn-info" > Update</button>
+            <button (click) = "deleteTimesheet(timesheet.empId)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        </td>
+
+    </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;
+<div class="text-center">
+  <a href="loginsuccess" class="btn btn-warning" style="font-size:20px">Back</a>
+  </div>

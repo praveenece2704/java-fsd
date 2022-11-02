@@ -1,0 +1,21 @@
+.container{
+    max-width: 500px;
+    background-image: url("https://i1.pickpik.com/photos/78/502/487/abstract-background-color-colors-preview.jpg");
+    padding-top: 15px;
+    padding-bottom: 5px;
+background-size: cover;
+    border-radius: 10px;
+  box-shadow: 10px 10px 5px gray;
+  margin-top: 10px;
+}
+.textual{
+    text-align: center;
+    font-family: serif;
+    font-weight: bolder;
+}
+label{
+    font-weight: bold;
+}
+span{
+    color: darkblue;
+}

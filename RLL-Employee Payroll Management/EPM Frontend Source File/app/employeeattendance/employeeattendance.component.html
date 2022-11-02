@@ -1,0 +1,20 @@
+<h2 style="background-color:cornsilk ;text-align: center;margin:0px">Attendance List of Employee</h2>
+<table class ="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td> {{attend.empId}}</td>
+        <td> {{attend.date}}</td>
+        <td> {{attend.status}}</td>
+        </tr>
+    </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;
+<div class="text-center">
+<button class="btn btn-warning" (click)="Back()">Back</button></div>

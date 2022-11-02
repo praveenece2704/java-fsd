@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand bg-info navbar-dark navbar-fixed-top">
+    <ul class = "navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class = "nav-item">
+          <a href="createschedule" routerLinkActive="active" class="nav-link btn btn-dark" ><span style="color:white;font-size:20px">createschedule</span></a>
+      </li>
+      
+    </ul> 
+    <div style="margin-right:35%;" >
+        <span style="font-size: 25px;" class="navbar-brand mx-auto">Work Schedule</span>
+    </div>
+    <ul class="nav navbar-nav my-2 my-lg-0">
+  
+    </ul><button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+  </nav>
+  
+  <table class="table table-striped table-bordered" >
+    <thead class="text-center" style="background-color: black;color:white">
+        <tr>
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Shift</th>
+            <th>StartingTIme</th>
+            <th>EndingTIme</th>
+            <th>Duration</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody style="color:white;background-image: url('https://t4.ftcdn.net/jpg/02/97/09/81/360_F_297098131_6Kgm7iFL6ZXi5AJWh5IAoWUiXBOR6vf3.jpg');">
+        <tr *ngFor = "let employee of Schedule" class="text-center">
+        <td style="color:white"> {{employee.empId}}</td>
+        <td style="color:white"> {{employee.date}}</td>
+        <td style="color:white"> {{employee.shift}}</td>
+        <td style="color:white"> {{employee.startingTime}}</td>
+        <td style="color:white">{{employee.endTime}}</td>
+        <td style="color:white">{{employee.duration}}</td>
+        <td>
+
+            <button (click) = "updateSchedule(employee.empId)" class = "btn btn-info"> Update</button>
+            <button (click) = "deleteSchedule(employee.empId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+&nbsp;&nbsp;&nbsp;<div class="text-center">
+    <a href="loginsuccess" class="btn btn-warning" style="font-size:20px">Back</a>
+    </div>

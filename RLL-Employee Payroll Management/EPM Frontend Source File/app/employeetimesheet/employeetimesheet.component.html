@@ -1,0 +1,38 @@
+<nav class="text-center bg-info">
+  
+  <div class="text-center" >
+      <span style="font-size: 25px;" class="navbar-brand mx-auto ">Timesheet List</span>
+  </div>
+</nav>
+
+<table class="table">
+  <thead style="background-color:black;color:white">
+    <tr>
+      <th>EmpId</th>
+      <th>Date</th>
+      <th>InTime</th>
+      <th>OutTime</th>
+      <th>RegularTime</th>
+      <th>BreakTime</th>
+      <th>OverTimeHours</th>
+      <th>TotalHours</th>
+    </tr>
+  </thead>
+  <tbody style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWbYWZp1FjD4Z81Sc-HoDw2OfGFG7ewovGA&usqp=CAU');">
+    <tr >
+        <td>{{timesheet.empId}}</td>
+        <td>{{timesheet.date}}</td>
+        <td>{{timesheet.inTime}}</td>
+        <td>{{timesheet.outTime}}</td>
+        <td>{{timesheet.regularTime}}</td>
+        <td>{{timesheet.breakTime}}</td>
+        <td>{{timesheet.overtimeHours}}</td>
+        <td>{{timesheet.totalHours}}</td>
+
+
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="text-center">
+<button class="btn btn-warning" (click)="Back()"><b>Back</b></button></div>

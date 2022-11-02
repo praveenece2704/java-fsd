@@ -1,0 +1,9 @@
+.container {
+    background-color: #2a2a2b;
+    margin-top: 40px;
+    max-width: 650px;
+  }
+label{
+    color:white;
+    font-weight: bold;
+}

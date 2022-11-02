@@ -1,0 +1,11 @@
+.container {
+  background-image:url('https://media.istockphoto.com/photos/laptop-half-closed-from-the-side-in-the-dark-picture-id1321551295?b=1&k=20&m=1321551295&s=170667a&w=0&h=6fvi07_N0uFYgX1SocldEyV24quzEP0UJD9s4lAGhJg=');
+  margin-top: 30px;
+  max-width: 600px;
+  background-size :cover;
+}
+label
+{
+ color:white;
+ font-weight: bold;
+}
